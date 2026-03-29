@@ -7,20 +7,20 @@ class Dexfinder < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/JuneLeGency/dexfinder/releases/download/v0.3.1/dexfinder-darwin-arm64.tar.gz"
-      sha256 "ea5d8c972a57377654ec9b9f60cb47050d5b6f49783c02e6966ecf1a93ee515b"
+      sha256 "e784a5d0fb0e4870a6a0c67604598ec28d1a94a0292ee3b498d28f24b95ac47d"
     else
       url "https://github.com/JuneLeGency/dexfinder/releases/download/v0.3.1/dexfinder-darwin-amd64.tar.gz"
-      sha256 "2659f0bf16603823662697244d85761070821059047368823a0c019144539c25"
+      sha256 "52abaf99f959001c716658de4db15e5f6e6146884535ada1f9998e1698a4920e"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/JuneLeGency/dexfinder/releases/download/v0.3.1/dexfinder-linux-arm64.tar.gz"
-      sha256 "505dbfee92f4fda5136de2a963de813c69f0b65046a186bd0401b79c794d0ab8"
+      sha256 "9989100640f461869b018dfb2c6b915a28146f98718d87116568e8781e8ae483"
     else
       url "https://github.com/JuneLeGency/dexfinder/releases/download/v0.3.1/dexfinder-linux-amd64.tar.gz"
-      sha256 "5ef77b11454b45f93fcd7887af551f9f309e4b16ea44db86b6c148733839a69b"
+      sha256 "9e9f954821272f9cce00bf3facb16a33952a6e0093275d0f4f1cfa49f30f210b"
     end
   end
 
@@ -29,6 +29,6 @@ class Dexfinder < Formula
   end
 
   test do
-    assert_match "dexfinder", shell_output("#{bin}/dexfinder --version")
+    assert_match "dexfinder", shell_output("#{bin}/dexfinder --help 2>&1", 0)
   end
 end
