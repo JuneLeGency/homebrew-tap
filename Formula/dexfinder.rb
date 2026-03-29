@@ -1,26 +1,26 @@
 class Dexfinder < Formula
   desc "Cross-platform APK/DEX method finder with call chain tracing"
   homepage "https://github.com/JuneLeGency/dexfinder"
-  version "0.3.0"
+  version "0.3.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/JuneLeGency/dexfinder/releases/download/v0.3.0/dexfinder-darwin-arm64.tar.gz"
-      sha256 "4833818a55c39abf574503ff5cbe72cc0c7eda52d739ea3d7a9de6f52c314c27"
+      url "https://github.com/JuneLeGency/dexfinder/releases/download/v0.3.1/dexfinder-darwin-arm64.tar.gz"
+      sha256 "ea5d8c972a57377654ec9b9f60cb47050d5b6f49783c02e6966ecf1a93ee515b"
     else
-      url "https://github.com/JuneLeGency/dexfinder/releases/download/v0.3.0/dexfinder-darwin-amd64.tar.gz"
-      sha256 "5bd9dceb46db763822b7b1dd8aa356ec90484ecfd5ef07114ef7ab7c5d942d61"
+      url "https://github.com/JuneLeGency/dexfinder/releases/download/v0.3.1/dexfinder-darwin-amd64.tar.gz"
+      sha256 "2659f0bf16603823662697244d85761070821059047368823a0c019144539c25"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/JuneLeGency/dexfinder/releases/download/v0.3.0/dexfinder-linux-arm64.tar.gz"
-      sha256 "c56e5d5e8f770052f3461a2bda9f9cbf54dbabf6df80d00368a4afb55f0b500d"
+      url "https://github.com/JuneLeGency/dexfinder/releases/download/v0.3.1/dexfinder-linux-arm64.tar.gz"
+      sha256 "505dbfee92f4fda5136de2a963de813c69f0b65046a186bd0401b79c794d0ab8"
     else
-      url "https://github.com/JuneLeGency/dexfinder/releases/download/v0.3.0/dexfinder-linux-amd64.tar.gz"
-      sha256 "cb742097823c5b25f8b2525324356dad718e0c62cf80ce054253c9dbcffc9132"
+      url "https://github.com/JuneLeGency/dexfinder/releases/download/v0.3.1/dexfinder-linux-amd64.tar.gz"
+      sha256 "5ef77b11454b45f93fcd7887af551f9f309e4b16ea44db86b6c148733839a69b"
     end
   end
 
